@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #111;
+    color: #eee;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #1c1c1c;
+    padding: 3rem 4rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    max-width: 90%;
+    transition: transform 0.3s ease;
+}
+
+.game-container:hover {
+  transform: scale(1.02); /* subtle interactive feel */
+}
+
+.quote {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+input {
+    font-size: 1.1rem;
+    border: 2px solid #333;
+    background-color: #222;
+    color: #eee;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    width: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; 
+}
+
+input:focus {
+    outline: none;
+    border-color: #00bfff;
+    box-shadow: 0 0 6px #00bfff;
+}
+
+input.completed {
+  border-color: #00ff00;
+  box-shadow: 0 0 6px #00ff00;
+}
+
+input.correct {
+    border-color: #00ff00;
+    box-shadow: 0 0 4px #00ff00;
+}
+
+input.incorrect {
+    border-color: #ff0000;
+    box-shadow: 0 0 4px #ff0000;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #00bfff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #009cd4;
+    transform: scale(1.05);
+}
+
+.correct {
+    color: #007fff;
+}
+
+.incorrect {
+    color: #ff4444;
+}
+
+.quote span { 
+    transition: color 0.1s ease; 
+}
