@@ -42,6 +42,21 @@ This project helped me strengthen:
    git clone https://github.com/YOUR_USERNAME/typing-speed-game.git
 
 2. Open the project folder:
-   cd typing-speed-game
+   `cd typing-speed-game`
 
 3. Open index.html in your browser — no server required!
+
+
+## 💬 Future Improvements
+
+- Add accuracy percentage
+
+- Introduce a blinking caret like Monkeytype
+
+- Fetch quotes from an API
+
+- Track high scores using localStorage
+   
+## 🧑‍💻 Author
+- Kem W
+- Frontend Developer in training 💡
